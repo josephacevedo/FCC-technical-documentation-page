@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="nav-div">
+        <nav id="navbar">
+            <header>
+                <h1>HTML Documentation</h1>
+            </header>
+            <div id="nav-link-div">
+                <a class="nav-link" href="#Intro">Intro</a>
+                <a class="nav-link" href="#Classes_and_Ids">Classes and Ids</a>
+                <a class="nav-link" href="#Tables">tables</a>
+                <a class="nav-link" href="#Forms">forms</a>
+                <a class="nav-link" href="#Links">links</a>
+                <a class="nav-link" href="#Reference">Reference</a>
+            </div>
+        </nav>
+    </div>
+
+
+
+    <div id="main-div">
+        <main id="main-doc">
+            <section class="main-section" id="Intro">
+                <header>
+                    <h1>Intro</h1>
+                </header>
+                <p>HTML (HyperText Markup Language) is the most basic building block of the Web. It defines the meaning
+                    and structure of web content. Other technologies besides HTML are generally used to describe a web
+                    page's appearance/presentation <a target="_blank"
+                        href="https://www.w3schools.com/css/css_intro.asp">(CSS)</a> or functionality/behavior <a
+                        target="_blank" href="https://www.w3schools.com/js/js_intro.asp">(JavaScript)</a>.</p>
+
+                <p>"HyperText" refers to links that connect web pages to one another, either within a single website or
+                    between websites. Links are a fundamental aspect of the Web. By uploading content to the Internet
+                    and linking it to pages created by other people, you become an active participant in the World Wide
+                    Web.</p>
+
+                <p>HTML uses "markup" to annotate text, images, and other content for display in a Web browser. HTML
+                    markup includes special "elements" such as</p>
+                <ul>
+                    <li><code>head</code></li>
+                    <li><code>title</code></li>
+                    <li><code>body</code></li>
+                    <li><code>header</code></li>
+                    <li><code>footer</code></li>
+                    <li><code>article</code></li>
+                    <li><code>section</code></li>
+                    <li><code>p</code></li>
+                    <li><code>div</code></li>
+                    <li><code>span</code></li>
+                    <li><code>img</code></li>
+                    <li><code>aside</code></li>
+                    <li><code>audio</code></li>
+                    <li><code>nav</code></li>
+                </ul>
+                <p>and much much more</p>
+            </section>
+
+            <section class="main-section" id="Classes_and_Ids">
+                <header>
+                    <h1>Classes and Ids</h1>
+                </header>
+
+                <p>The class global attribute is a space-separated list of the classes of the element. Classes allows
+                    CSS and Javascript to select and access specific elements via the class selectors or functions like
+                    the DOM method document.getElementsByClassName.</p>
+
+                <p>Though the specification doesn't put requirements on the name of classes, web developers are
+                    encouraged to use names that describe the semantic purpose of the element, rather than the
+                    presentation of the element. For example, attribute to describe an attribute rather than italics,
+                    although an element of this class may be presented by italics. Semantic names remain logical even if
+                    the presentation of the page changes.</p>
+
+                <p>The id global attribute defines a unique identifier (ID) which must be unique in the whole document.
+                    Its purpose is to identify the element when linking (using a fragment identifier), scripting, or
+                    styling (with CSS).</p>
+
+                <p>This attribute's value is an opaque string: this means that web author must not use it to convey any
+                    information. Particular meaning, for example semantic meaning, must not be derived from the string.
+                    This attribute's value must not contain whitespace (spaces, tabs etc.). Browsers treat
+                    non-conforming IDs that contain whitespace as if the whitespace is part of the ID. In contrast to
+                    the class attribute, which allows space-separated values, elements can only have one single ID.</p>
+            </section>
+
+            <section class="main-section" id="Tables">
+                <header>
+                    <h1>Tables</h1>
+                </header>
+                <p>An HTML table is defined with the table tag.
+                    Each table row is defined with the <code>tr</code> tag. A table header is defined with the
+                    <code>th</code> tag. By
+                    default, table headings are bold and centered. A table data/cell is defined with the
+                    <code> td </code>tag.
+                </p>
+                <table>
+                    <tr>
+                        <th>Firstname</th>
+                        <th>Lastname</th>
+                        <th>Age</th>
+                    </tr>
+                    <tr>
+                        <td>Jill</td>
+                        <td>Smith</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>Eve</td>
+                        <td>Jackson</td>
+                        <td>94</td>
+                    </tr>
+                </table>
+
+            </section>
+            <section class="main-section" id="Forms">
+                <header>
+                    <h1>Forms</h1>
+                </header>
+                <p>The HTML <code> form </code>element defines a form that is used to collect user input: An HTML form
+                    contains form elements.
+
+                    Form elements are different types of input elements, like: text fields, checkboxes, radio buttons,
+                    submit buttons, and more.</p>
+
+                <form>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label><br>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label><br>
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Other</label>
+                </form>
+            </section>
+            <section class="main-section" id="Links">
+                <header>
+                    <h1>Links</h1>
+                </header>
+                <p>Links are found in nearly all web pages. Links allow users to click their way from page to page.</p>
+                <p>HTML links are hyperlinks.</p>
+                <p>You can click on a link and jump to another document.</p>
+                <p>When you move the mouse over a link, the mouse arrow will turn into a little hand.</p>
+                <p> A link does not have to be text. It can be an image or any other HTML element.</p>
+                <code>
+                    <a href="url">link text</a>
+                </code>
+            </section>
+            <section class="main-section" id="Reference">
+                <header>
+                    <h1>Reference</h1>
+                </header>
+                <a href="https://www.w3schools.com/">w3schools</a>
+                <a href="https://developer.mozilla.org/en-US/">MDN</a>
+            </section>
+
+            <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+        </main>
+    </div>
+</body>
+
+</html>
